@@ -11,7 +11,7 @@ def show_result(list,arg):
         defination= list[i]["definition"]
         example= list[i]["example"]
         #print(f"({i}):{list[i]["definition"]}")
-        print(home)
+        #print(home)
         print("-------------------------------------------------------------------")
         print("(defintion):")
         print(defination)
