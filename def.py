@@ -17,7 +17,7 @@ def show_result(list,arg):
         print(defination)
         print(f"(example):")
         print(example)
-        with open (f"{home}/ter_dict/history.csv","a") as history:
+        with open (f"{home}/.ter_dict/history.csv","a") as history:
             history.write(f"{arg},\"{defination}\",\"{example}\"\n")
             
 		
@@ -33,12 +33,11 @@ def dict(arg):
             show_result(meanings,arg)
         except:
             error_message = "meaning of {} not found due to ...".format(arg)
-            print(error_message)
+            #print(error_message)
         # finally:
         #     return meaning
-
-    else:
-        return "There seems to be problem in your internet connection or ....."        
+        else:
+        	return "There seems to be problem in your internet connection or ....."        
 
 
 if __name__ == "__main__":
